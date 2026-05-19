@@ -1,0 +1,72 @@
+ <div class="card warning">
+        <h2 id="openOs">0</h2>
+        <<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MARLIFT SYSTEM</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div>
+      <h1>MARLIFT</h1>
+      <span>Sistema de Ordem de Serviço</span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="dashboard">
+      <div class="card">
+        <h2 id="totalOs">0</h2>
+        <p>Total de OS</p>
+      </div>
+p>Em Aberto</p>
+      </div>
+
+      <div class="card success">
+        <h2 id="doneOs">0</h2>
+        <p>Concluídas</p>
+      </div>
+    </section>
+
+    <section class="new-order">
+      <h2>Nova Ordem de Serviço</h2>
+
+      <form id="osForm">
+
+        <input type="text" id="client" placeholder="Nome do Cliente" required />
+
+        <input type="text" id="equipment" placeholder="Equipamento" required />
+
+        <input type="text" id="address" placeholder="Endereço Completo" required />
+
+        <input type="text" id="technician" placeholder="Técnico Responsável" required />
+
+        <select id="priority">
+          <option>Normal</option>
+          <option>Alta</option>
+          <option>Emergencial</option>
+        </select>
+
+        <textarea id="problem" placeholder="Defeito apresentado"></textarea>
+
+        <button type="submit">Salvar Ordem de Serviço</button>
+
+      </form>
+    </section>
+
+    <section class="orders-list">
+      <h2>Ordens Recentes</h2>
+
+      <div id="ordersContainer"></div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
